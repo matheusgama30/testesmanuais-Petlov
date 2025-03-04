@@ -40,5 +40,5 @@ A utilização de um CEP inválido pode resultar em falhas no preenchimento auto
 - **Média**
 
 ## Evidência
-![Evidência do erro](./img/bug001.png)
 ![Evidência do erro](././img/bug01.png)
+![Evidência do erro](./img/bug001.png)
