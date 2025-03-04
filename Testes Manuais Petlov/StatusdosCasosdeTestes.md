@@ -1,0 +1,13 @@
+# Status dos Casos de Testes
+
+| ID  | Título | Resultado Esperado | Resultado Obtido | Status | Observações |
+| --- | --- | --- | --- | --- | --- |
+| 01  | Preenchimento de Formulário de Cadastro Válido | O sistema deve validar os dados e exibir uma mensagem de sucesso: "**Você fez a diferença!**". | O sistema validou os dados corretamente e exibiu a mensagem "Você fez a diferença!". | ✅ Sucesso | - |
+| 02  | Validação de Campos Obrigatórios no Formulário | O sistema deve exibir mensagens de erro informando que os campos obrigatórios não foram preenchidos. | O sistema validou que os campos “Nome”, “E-mail”, “CEP” e “Número” são obrigatórios. | ✅ Sucesso | - |
+| 03  | Validação do Campo Obrigatório “Nome do Ponto de Doação” | O sistema deve exibir uma mensagem de erro informando que o campo “Nome do Ponto de Doação” é obrigatório. | O sistema validou que o campo “Nome” é obrigatório, exibindo a mensagem “Informe o seu nome completo”. | ✅ Sucesso | - |
+| 04  | Validação do Campo Obrigatório “E-mail” | O sistema deve exibir uma mensagem de erro informando que o campo “E-mail” é obrigatório. | O sistema validou que o campo “E-mail” é obrigatório, exibindo a mensagem “Informe o seu melhor e-mail”. | ✅ Sucesso | - |
+| 05  | Validação do Campo “E-mail” com um Endereço Inválido | O sistema deve exibir uma mensagem de erro informando que o e-mail é inválido. Exemplo: matheusgama.br | O sistema validou que o campo “E-mail” deve conter um endereço válido e exibiu a mensagem “Informe um e-mail válido”. | ✅ Sucesso | - |
+| 06  | Validação do Campo Obrigatório “CEP” | O sistema deve exibir uma mensagem de erro informando que o campo “CEP” é obrigatório. | O sistema validou que o campo “CEP” é obrigatório, exibindo a mensagem “Informe o seu CEP”. | ✅ Sucesso | - |
+| 07  | Validação do Campo “CEP” com um Número Inválido | O sistema deve exibir uma mensagem de erro informando “Informe um CEP válido” e impedir o cadastro. | O sistema validou que o CEP digitado é inválido, exibindo a mensagem “Informe um CEP válido”, mas permitiu a finalização do cadastro. | ❌ Falha | O sistema não deve permitir que o cadastro seja finalizado com um CEP inválido. |
+| 08  | Validação do Campo Obrigatório “Número” | O sistema deve exibir uma mensagem de erro informando que o campo “Número” é obrigatório. | O sistema validou que o campo “Número” é obrigatório, exibindo a mensagem “Informe um número maior que zero”. | ✅ Sucesso | - |
+| 09  | Validação dos Campos Rua, Bairro e Cidade/UF | O sistema deve preencher os campos “Rua”, “Bairro” e “Cidade/UF” com as informações corretas com base no CEP informado. | O sistema preencheu corretamente as informações correspondentes ao CEP informado. | ✅ Sucesso | - |
